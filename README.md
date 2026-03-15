@@ -10,6 +10,13 @@ When two LLMs debate a topic — one arguing with injected rhetorical bias, one 
 
 ---
 
+## Built With
+This project was designed and developed using [Claude Code](https://claude.ai/code) 
+and [Claude Cowork](https://claude.ai) as core development tools, iterating on 
+experiment design, debugging, and analysis in real time.
+
+---
+
 ## Experimental Design
 
 **Agents:**
