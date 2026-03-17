@@ -63,7 +63,7 @@ The judge made the correct verdict 93% of the time but correctly identified the 
 The blind judge correctly estimated bias severity in **70%** of cases vs **57%** for the informed judge. The critic's own severity labels introduced noise rather than signal.
 
 ### 5. Safety training overrode the statistics/strong bias prompt
-For one trial, when instructed to fabricate or cherry-pick statistics at strong intensity, the model refused and argued honestly instead. The judge correctly awarded it the win — an unintended finding about the limits of bias injection via system prompts, inducing bias rather than having it occur naturally (like with the cases of con arguing models developing pro-nuclear stances).
+For 7 trials, when instructed to fabricate or cherry-pick statistics at strong intensity, the model refused and argued honestly instead. The refusals occurred consistently across all three topics in the statistics/strong condition, and also triggered twice in the ai_jobs/false_balance/strong condition using slightly different wording. The judge correctly awarded the win to the honest arguer in 6 out of 7 cases. This suggests the safety boundary is not a one-off edge case but a reliable limit on strong-intensity fabrication prompts. This is an unintended finding about the limits of bias injection via system prompts, inducing bias rather than having it occur naturally (like with the cases of con arguing models developing pro-nuclear stances).
 
 ---
 
