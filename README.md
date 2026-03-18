@@ -57,7 +57,7 @@ The judge correctly identified the biased debater in **93% of trials**. However,
 The informed judge flagged the unbiased debater as biased in **80% of trials** (24/30). The blind judge flagged the same debater in only **7%** (2/30). The critic pipeline, designed to help the judge, instead over-sensitized it, causing it to interpret rhetorical imperfections in the unbiased argument as evidence of bias.
 
 ### 3. Verdict accuracy is far greater than explanation accuracy
-The judge made the correct verdict 93% of the time but correctly identified the *type* of bias in only **43% of trials**. It is making right decisions for partially wrong reasons — a meaningful limitation for any application requiring interpretable bias detection.
+The judge made the correct verdict 93% of the time but correctly identified the type of bias in only **43% of trials**. It is making the right decisions for partially wrong reasons, which is a meaningful limitation for any application requiring interpretable bias detection.
 
 ### 4. Critic analysis degrades severity accuracy
 The blind judge correctly estimated bias severity in **70%** of cases vs **57%** for the informed judge. The critic's own severity labels introduced noise rather than a correct signal.
