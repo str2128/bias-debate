@@ -129,4 +129,4 @@ python analysis/analyze.py
 - Small sample size (n=2–4 per cell) limits statistical power
 - Only 3 debate topics; topic-argument alignment confound affects nuclear energy results
 - Judge confidence scores clustered in 6–9 range, limiting calibration analysis
-- Bias injection via system prompts occassionally has hard limits (safety training overriding strong statistical bias)
+- Bias injection via system prompts occasionally has hard limits (safety training overriding strong statistical bias)
