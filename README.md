@@ -51,16 +51,16 @@ Each bias type was tested at **mild** and **strong** intensity across 3 debate t
 ## Key Findings
 
 ### 1. Judge accuracy was high overall,  but for the wrong reasons
-The judge correctly identified the biased debater in **93% of trials**. However, failure cases clustered almost exclusively on the nuclear energy topic, where the unbiased debater independently developed a pro-nuclear lean without any prompting, invalidating the unbiased control for that topic. High accuracy reflects **topic-argument alignment** (some positions are empirically easier to defend) as much as genuine bias detection.
+The judge correctly identified the biased debater in **93% of trials**. However, failure cases clustered almost exclusively on the nuclear energy topic, where the unbiased debater independently developed a pro-nuclear lean without any prompting, invalidating the unbiased control for that topic. High accuracy may reflect topic-argument alignment, that some positions are empirically easier to defend, as much as genuine bias detection.
 
 ### 2. Critic analysis dramatically inflated false positives
-The informed judge flagged the unbiased debater as biased in **80% of trials** (24/30). The blind judge flagged the same debater in only **7%** (2/30). The critic pipeline, designed to help the judge, instead over-sensitised it, causing it to interpret minor rhetorical imperfections in the unbiased argument as evidence of bias.
+The informed judge flagged the unbiased debater as biased in **80% of trials** (24/30). The blind judge flagged the same debater in only **7%** (2/30). The critic pipeline, designed to help the judge, instead over-sensitized it, causing it to interpret rhetorical imperfections in the unbiased argument as evidence of bias.
 
-### 3. Verdict accuracy far outpaces explanation accuracy
+### 3. Verdict accuracy is far greater than explanation accuracy
 The judge made the correct verdict 93% of the time but correctly identified the *type* of bias in only **43% of trials**. It is making right decisions for partially wrong reasons — a meaningful limitation for any application requiring interpretable bias detection.
 
 ### 4. Critic analysis degrades severity accuracy
-The blind judge correctly estimated bias severity in **70%** of cases vs **57%** for the informed judge. The critic's own severity labels introduced noise rather than signal.
+The blind judge correctly estimated bias severity in **70%** of cases vs **57%** for the informed judge. The critic's own severity labels introduced noise rather than a correct signal.
 
 ### 5. Safety training overrode the statistics/strong bias prompt
 For 7 trials, when instructed to fabricate or cherry-pick statistics or to present a lopsided issue as equally valid on both sides at strong intensity, the model refused and argued honestly instead. The refusals occurred consistently across all three topics in the statistics/strong condition, and triggered twice in the ai_jobs/false_balance/strong condition using slightly different wording. The judge correctly awarded the win to the honest arguer in 6 out of 7 cases. This suggests the safety boundary is not a one-off edge case but a reliable limit on strong-intensity fabrication prompts. This is an unintended finding about the limits of bias injection via system prompts, inducing bias rather than having it occur naturally (like with the cases of con arguing models developing pro-nuclear stances).
